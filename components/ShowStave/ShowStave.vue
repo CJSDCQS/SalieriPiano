@@ -7,6 +7,7 @@
 
 <script>
 	import NoteConfig from "../../config/NoteConfig.js"
+	import { EventBus } from "../../pages/pianoGame/event-bus.js"
 	
 	export default {
 		name: "ShowStave",
@@ -18,6 +19,9 @@
 		mounted() {
 			let that = this
 			that.getRandomTop()
+			EventBus.$on("keyboardTouch", (value) => {
+				console.log("ShowStave.$on", value)
+			})
 		},
 		methods: {
 			showNote() {	// 显示音符

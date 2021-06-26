@@ -32,6 +32,7 @@
 </template>
 
 <script>
+	import { EventBus } from "../../pages/pianoGame/event-bus.js"
 	import KeyBoardConfig from "../../config/KeyBoardConfig.js"
 	import getNoteOgg from "../../config/NoteOggConfig.js"
 
@@ -50,6 +51,7 @@
 			mouseStartClick(e) {
 				let toneType = e.currentTarget.dataset.type
 				console.log("下标", toneType)
+				EventBus.$emit("keyboardTouch", toneType)
 				if (toneType.length == 1) {
 					document.getElementsByClassName('key' + toneType)[0].style.backgroundColor = "#DCDCDC"
 				} else {
