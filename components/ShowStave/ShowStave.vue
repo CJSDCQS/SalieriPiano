@@ -21,6 +21,9 @@
 			that.getRandomTop()
 			EventBus.$on("keyboardTouch", (value) => {
 				console.log("ShowStave.$on", value)
+				if (value == that.status['do']) {
+					// 加分
+				}
 			})
 		},
 		methods: {
@@ -35,12 +38,11 @@
 				document.getElementById("note").style.position = "absolute"
 			},
 			getRandomTop() {	// 设置随机 class
-				let index = NoteConfig.getRandomNoteIndex()
-				let top = NoteConfig.getTop(index)
-				this.setTop(top)
+				let item = NoteConfig.getRandomNoteItem()
+				this.setTop(item['pos'])
 				this.showNote()
-				this.status = index
-				console.log("getRandomTop", index, top)
+				this.status = item
+				console.log("getRandomTop", item)
 			},
 		}
 	}
