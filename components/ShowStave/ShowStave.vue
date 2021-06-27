@@ -23,6 +23,12 @@
 				console.log("ShowStave.$on", value)
 				if (value == that.status['do']) {
 					// 加分
+					console.log("加分")
+				} else if (that.status.length == 0) {
+					console.log("无效按键")
+				} else {
+					// 错误
+					console.log("错误")
 				}
 			})
 		},
