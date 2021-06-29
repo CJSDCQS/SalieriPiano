@@ -1,0 +1,75 @@
+#pianoBoard {
+	position: absolute;
+	border-top: 1px solid gray;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.keyDown {
+	width: 13.16%;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	text-align: center;
+}
+.keyUp {
+	width: 10%;
+	background-color: #000;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 35%;
+	height: 66%;
+}
+.keyC {
+	left: 0;
+}
+.keyD {
+	left: 14%;
+}
+.keyE {
+	left: 28%;
+}
+.keyF {
+	left: 42%;
+}
+.keyG {
+	left: 56%;
+}
+.keyA {
+	left: 70%;
+}
+.keyB {
+	left: 84%;
+	right: 0;
+	width: auto;
+}
+.keyUpC {
+	left: 9%;
+}
+.keyUpD {
+	left: 22.8%;
+}
+.keyUpF {
+	left: 50.5%;
+}
+.keyUpG {
+	left: 64.7%;
+}
+.keyUpA {
+	left: 79%;
+}
+.keyDownName {
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+}
+.normalKeyHover {
+	background-color: #DCDCDC!important;
+}
+.higherKeyHover {
+	background-color: #505050;
+}
+

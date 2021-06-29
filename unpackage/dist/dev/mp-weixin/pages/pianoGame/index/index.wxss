@@ -1,0 +1,30 @@
+
+page {
+	margin: 0;
+	padding: 0;
+}
+#app {
+	height: 100vh;
+	width: 100vw;
+}
+#score {
+	position: absolute;
+	top: 5vh;
+	width: 100vw;
+	height: 20vh;
+}
+#showStave {
+	position: absolute;
+	top: 21vh;
+	width: 100vw;
+	height: 44vh;
+	text-align: center;
+}
+#keyboard {
+	position: absolute;
+	bottom: 0;
+	height: 25vh;
+	width: 60vw;
+	left: 20vw;
+}
+

@@ -1,0 +1,29 @@
+
+.error {
+	margin-left: 20rpx;
+	color: red;
+}
+.text {
+	letter-spacing: .07em;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.number {
+	margin-left: 60rpx;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.score {
+	margin-left: 20rpx;
+	color: orange;
+}
+.animate-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 128rpx;
+	height: 128rpx;
+	margin-left: -64rpx;
+	margin-top: -64rpx;
+}
+

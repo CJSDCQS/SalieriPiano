@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "score": "/components/Score/Score",
+    "show-stave": "/components/ShowStave/ShowStave",
+    "keyboard-component": "/components/KeyboardComponent/KeyboardComponent"
+  }
+}

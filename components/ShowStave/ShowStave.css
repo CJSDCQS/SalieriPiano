@@ -2,21 +2,9 @@ image {
 	will-change: transform
 }
 
-#showArea {
-	position: relative;
-}
 
-#stave {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-#note {
-	position: absolute;
+.note {
+	position: absolute!important;
 	z-index: 1;
-	left: 50%;
-	-webkit-transition: 0.2s;
-	height: 22.2%;
 	display: none;
 }

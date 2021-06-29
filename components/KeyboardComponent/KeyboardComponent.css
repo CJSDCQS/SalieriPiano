@@ -81,3 +81,11 @@
 	bottom: 0;
 	left: 40%;
 }
+
+.normalKeyHover {
+	background-color: #DCDCDC!important;
+}
+
+.higherKeyHover {
+	background-color: #505050;
+}

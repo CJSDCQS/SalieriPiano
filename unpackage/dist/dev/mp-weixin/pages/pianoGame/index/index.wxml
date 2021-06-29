@@ -1,0 +1,1 @@
+<view id="app"><score vue-id="150f45e4-1" id="score" bind:__l="__l"></score><show-stave vue-id="150f45e4-2" id="showStave" bind:__l="__l"></show-stave><keyboard-component vue-id="150f45e4-3" id="keyboard" bind:__l="__l"></keyboard-component></view>

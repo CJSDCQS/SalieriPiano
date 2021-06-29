@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pengpai-fade-in-out": "/components/Pengpai-FadeInOut/Pengpai-FadeInOut"
+  }
+}
