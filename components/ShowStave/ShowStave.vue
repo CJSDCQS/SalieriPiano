@@ -15,40 +15,38 @@
 			return {
 				status: "",
 				noteTop: "0%",
-			};
+			}
 		},
 		mounted() {
 			let that = this
-			that.getRandomTop()
 			EventBus.$on("keyboardTouch", (value) => {
-				console.log("ShowStave.$on", value)
 				if (value == that.status['do']) {
-					// 加分
-					console.log("加分")
-					EventBus.$emit("addScore", 1)
+					// console.log("加分")
+					EventBus.$emit("addScore", 1)	// 告诉分数组件按键正确
 				} else if (that.status.length == 0) {
-					console.log("无效按键")
+					// console.log("无效按键")
 				} else {
-					// 错误
-					console.log("错误")
-					EventBus.$emit("reduceScore", 1)
+					// console.log("错误")
+					EventBus.$emit("reduceScore", 1)	// 告诉分数组件按键错误
 				}
 			})
 			EventBus.$on("changeNote", (value) => {
 				that.getRandomTop()
 			})
+			setTimeout(that.getRandomTop(), 3000)
 		},
 		methods: {
 			getRandomTop() {	// 设置随机 class
 				let item = NoteConfig.getRandomNoteItem()
 				this.noteTop = item['pos']
 				this.status = item
-				console.log("getRandomTop", item)
+				// console.log("getRandomTop", item)
+				EventBus.$emit("currentStep", item['step'])	// 告诉键盘组件当前调号
 			},
 		}
 	}
 </script>
 
 <style scoped>
-	@import "RightHand.css";
+	@import "ShowStave.css";
 </style>

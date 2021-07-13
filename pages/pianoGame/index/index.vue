@@ -17,19 +17,9 @@
 			ShowStave,
 			Score
 		},
-		mounted() {
-			uni.getSystemInfo({
-				success(res) {
-					
-				},
-				fail() {
-					
-				}
-			})
-		},
 		data() {
 			return {
-				score: 0, // 得分: 答对一个加一分
+				
 			}
 		},
 		methods: {

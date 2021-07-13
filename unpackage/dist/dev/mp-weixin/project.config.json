@@ -4,11 +4,14 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false
+    "urlCheck": false,
+    "es6": true,
+    "minified": true,
+    "postcss": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
+  "appid": "wx6ab0898aa8f5eaae",
   "projectname": "salieriPiano",
   "condition": {
     "search": {

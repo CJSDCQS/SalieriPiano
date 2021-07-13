@@ -1,7 +1,7 @@
 {
     "name" : "salieriPiano",
-    "appid" : "",
-    "description" : "",
+    "appid" : "__UNI__B81BBAD",
+    "description" : "用于钢琴初学者熟悉五线谱的小应用",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
@@ -44,7 +44,19 @@
             "ios" : {},
             /* SDK配置 */
             "sdkConfigs" : {
-                "oauth" : {}
+                "oauth" : {},
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/piano.png",
+                    "xhdpi" : "static/piano.png",
+                    "xxhdpi" : "static/piano.png",
+                    "xxxhdpi" : "static/piano.png"
+                },
+                "ios" : {
+                    "appstore" : "static/piano.png"
+                }
             }
         }
     },
@@ -52,9 +64,12 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx6ab0898aa8f5eaae",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "es6" : true,
+            "minified" : true,
+            "postcss" : true
         },
         "usingComponents" : true
     },
